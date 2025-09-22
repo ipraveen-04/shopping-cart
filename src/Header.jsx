@@ -9,13 +9,18 @@ const Header = () => {
     <header className="bg-[#1d3557] shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/">
-          <div className="text-2xl font-bold text-white">ShopNest</div>
+          <div className="text-2xl font-bold text-white hover:text-yellow-400">
+            ShopNest
+          </div>
           {/* <img src="https://chatgpt.com/s/m_68d0daea0b8c8191b4bfc767c1b6fa3e" /> */}
         </Link>
 
         <nav className="hidden md:flex space-x-6">
           {/* <a className="text-gray-700 hover:text-blue-600"></a> */}
-          <Link className="cursor-pointer text-white" to="/">
+          <Link
+            className="cursor-pointer text-white hover:text-yellow-400"
+            to="/"
+          >
             Home
           </Link>
         </nav>
@@ -34,7 +39,7 @@ const Header = () => {
       </div>
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-700 shadow-lg border-t border-blue-600">
+        <div className="md:hidden bg-[#1d3557] shadow-lg border-t border-[#a2adbd]">
           <nav className="flex flex-col space-y-2 p-4 font-medium">
             <Link
               to="/"

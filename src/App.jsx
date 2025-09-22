@@ -2,6 +2,7 @@ import Header from "./Header";
 import Product from "./Product";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartList from "./CartList";
+import Footer from "./Footer";
 // import { clearAllItem } from "./redux/slice";
 // import { useDispatch } from "react-redux";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Product />}></Route>
           <Route path="/cart" element={<CartList />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
